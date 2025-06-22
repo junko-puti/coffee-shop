@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="お好みのブレンドをお手軽に。老舗の味をテイクアウトで楽しめる新しいカフェスタイル">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <title>THE LITTLE CAFE</title>
+    <meta name="robots" content="noindex">
+    <!-- <link rel="icon" href="img/favicon.ico"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    
+  </head>
+<body>
+  <header class="header">
+    <div class="inner header__inner">
+      <h1 class="header__logo"><a href="#">THE LITTLE CAFE</a></h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="fv">
+      <div class="fv__img">
+        <picture>
+          <source srcset="./images/fv-sp.jpg" media="(max-width: 767px)">
+          <img src="./images/fv.jpg" alt="ファーストビューPC">
+        </picture>
+      </div>
+      <p class="fv__catch">お好みのブレンドを<br class="sp">お手軽に</p>
+    </div>
+    <section class="menu" id="menu">
+      <div class="inner menu__inner">
+        <h2 class="section__title">MENU</h2>
+        <div class="menu__container">
+          <div class="menu__item">
+            <figure class="menu__img">
+              <picture>
+                <source srcset="./images/menu01-sp.jpg" media="(max-width: 767px)">
+                <img src="./images/menu01.jpg" alt="カフェラテ（ICE・HOT）">
+              </picture>
+            </figure>
+            <div class="menu__caption">
+                <h3 class="menu__title">カフェラテ（ICE・HOT）</h3>
+                <p class="menu__text">お好みのブレンドコーヒーと<br>厳選したミルクのカフェラテ</p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <figure class="menu__img">
+              <picture>
+                <source srcset="./images/menu02-sp.jpg" media="(max-width: 767px)">
+                <img src="./images/menu02.jpg" alt="コーヒー（ICE・HOT）">
+              </picture>
+            </figure>
+            <div class="menu__caption">
+                <h3 class="menu__title">コーヒー（ICE・HOT）</h3>
+                <p class="menu__text">お好みの味をブレンドした<br>コーヒー本来の味を味わえる</p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <figure class="menu__img">
+              <picture>
+                <source srcset="./images/menu03-sp.jpg" media="(max-width: 767px)">
+                <img src="./images/menu03.jpg" alt="カップケーキ（各種）">
+              </picture>
+            </figure>
+            <div class="menu__caption">
+                <h3 class="menu__title">カップケーキ（各種）</h3>
+                <p class="menu__text">コーヒーのお供に<br>日替わり常時５種類</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="inner about__inner">
+        <h2 class="section__title">ABOUT</h2>
+        <div class="about__container">
+          <div class="about__caption">
+            <h3 class="about__title">老舗の味をテイクアウトで楽しめる<br class="pc">新しいカフェスタイル</h3>
+            <p class="about__text">
+              知る人ぞ知る東京銀座の老舗カフェが提供する、移動販売のテイクアウト<span class="about__text-break">コーヒーです。</span><br class="about__text-break_none">
+              「いつもの」がお家でオフィスでお気軽に楽しめます。
+            </p>
+            <a href="#" class="more-btn">MORE</a>
+          </div>
+          <figure class="about__img">
+            <picture>
+              <source srcset="./images/about-sp.jpg" media="(max-width: 767px)">
+              <img src="./images/about.jpg" alt="コーヒーの移動販売車の写真">
+            </picture>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="footer__copyright">&copy;Copyright0000 THE LITTLE CAFE</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

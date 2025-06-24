@@ -29,9 +29,14 @@ img{
   height: auto;
   display: block;
 }
+
+
+
+a {
+  transition: all 0.3s ease; /* ← 通常状態に記述する */
+}
 a:hover{
   opacity: 0.5;
-  transition: all 0.3s ease;
 }
 
   /**共通**/
@@ -43,7 +48,8 @@ a:hover{
 }
 .section__title{
   position: relative;
-  margin-bottom: 47px;
+  padding-bottom: 16.5px;
+  margin-bottom: 30.5px;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
@@ -52,7 +58,8 @@ a:hover{
 }
 .menu .section__title{
   @include sp {
-    margin-bottom: 46px;
+    // padding-bottom: 16.5px;
+    margin-bottom: 29.5px;
     line-height: 1.17;/*line-height微調整*/
   }
 }
@@ -62,21 +69,22 @@ a:hover{
   width: 50px;
   height: 2px;
   left: 50%;
-  bottom: -16.5px;
+  bottom: 0;
   transform: translateX(-50%);
   background-color: #505050;
 }
 .more-btn{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 250px;
-  padding: 10.5px 0;
+  height: 55px;
   font-size: 25px;
   font-weight: 300;
-  line-height: calc(30 / 25);
-  text-align: center;
+  line-height: 1;
   color: #FFFFFF;
   background-color: #505050;
-  border: 2px #505050 solid;
+  border: 1px #505050 solid;
   transition: background-color 0.5s ease, color 0.5s ease; /* なめらかに変化 */
   @include sp {
     max-width: 315px;
@@ -95,10 +103,16 @@ a:hover{
   }
 }
 .pc{
+  display: inline-block;
   @include sp {
-    display: none;
+    display: inline;
   }
 }
+// .pc{
+//   @include sp {
+//     display: none;
+//   }
+// }
 
 /**header**/
 .header{
@@ -175,6 +189,10 @@ a:hover{
     font-size: 35px;
     line-height: calc(42 / 35);
   }
+  @include media(350px) {
+    font-size: 30px;
+  }
+
 }
 
 /**menu**/
@@ -220,6 +238,14 @@ a:hover{
   font-size: 20px;
   font-weight: 400;
   line-height: calc(25 / 20);
+  text-align: center;
+  @include media(810px) {
+    font-size: 19px;
+  }
+  @include sp {
+    font-size: 20px;
+  }
+
 }
 .menu__text{
   font-size: 15px;

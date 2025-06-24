@@ -11,10 +11,13 @@ img {
   display: block;
 }
 
+a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; /* ← 通常状態に記述する */
+}
+
 a:hover {
   opacity: 0.5;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 /**共通**/
@@ -27,7 +30,8 @@ a:hover {
 
 .section__title {
   position: relative;
-  margin-bottom: 47px;
+  padding-bottom: 16.5px;
+  margin-bottom: 30.5px;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
@@ -36,7 +40,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .menu .section__title {
-    margin-bottom: 46px;
+    margin-bottom: 29.5px;
     line-height: 1.17; /*line-height微調整*/
   }
 }
@@ -47,23 +51,30 @@ a:hover {
   width: 50px;
   height: 2px;
   left: 50%;
-  bottom: -16.5px;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #505050;
 }
 
 .more-btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 250px;
-  padding: 10.5px 0;
+  height: 55px;
   font-size: 25px;
   font-weight: 300;
-  line-height: 1.2;
-  text-align: center;
+  line-height: 1;
   color: #FFFFFF;
   background-color: #505050;
-  border: 2px #505050 solid;
+  border: 1px #505050 solid;
   -webkit-transition: background-color 0.5s ease, color 0.5s ease;
   transition: background-color 0.5s ease, color 0.5s ease; /* なめらかに変化 */
 }
@@ -89,9 +100,12 @@ a:hover {
   }
 }
 
+.pc {
+  display: inline-block;
+}
 @media (max-width: 767px) {
   .pc {
-    display: none;
+    display: inline;
   }
 }
 
@@ -212,6 +226,11 @@ a:hover {
     line-height: 1.2;
   }
 }
+@media (max-width: 350px) {
+  .fv__catch {
+    font-size: 30px;
+  }
+}
 
 /**menu**/
 .menu {
@@ -288,6 +307,17 @@ a:hover {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
+  text-align: center;
+}
+@media (max-width: 810px) {
+  .menu__title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .menu__title {
+    font-size: 20px;
+  }
 }
 
 .menu__text {

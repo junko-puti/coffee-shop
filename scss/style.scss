@@ -79,9 +79,11 @@ a:hover{
   justify-content: center;
   max-width: 250px;
   height: 55px;
+  padding-top: 10.5px;
+  padding-bottom: 14.5px;
   font-size: 25px;
   font-weight: 300;
-  line-height: 1;
+  line-height: calc(30 / 25);
   color: #FFFFFF;
   background-color: #505050;
   border: 1px #505050 solid;
